@@ -1,4 +1,4 @@
-function myFunction(p1)
+function myF1(p1)
 {
     if (p1==1){
     document.getElementById("dc1").style.display = "block";
@@ -19,7 +19,7 @@ function myFunction(p1)
     document.getElementById("dc6").style.display = "block";
     }
 }
-function myF(p1)
+function myF2(p1)
 {
     if (p1==1){
     document.getElementById("dc1").style.display = "none";

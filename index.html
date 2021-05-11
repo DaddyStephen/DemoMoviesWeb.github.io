@@ -1,69 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://sdk.visitorkit.com/v1/sr86l0"></script>
-    <link rel="stylesheet" href="domcss.css">
-    <style>
-        body{
-            background-color: #f0ede9;
-        }
-        div.head {
-            width: 1150px;
-            position: -webkit-sticky;
-            position: relative;
-            top: 0;
-            padding: 8px;
-            background-color: #ffffff;
-            margin-left: 60px;
-            margin-right: 10px;
-            margin-top: 0px;
-        }
-        header{
-            background-color: white;
-            text-align: center;
-            padding: 30px;
-            color: black;
-        }
-        #search{
-            border-style: none;
-        }
-        div.heading{
-            float: left;
-            width: 20%;
-            background-color: rgb(255, 255, 255);
-        }
+  <link href="css/test.css" rel="stylesheet">
 
-    </style>
 </head>
-<body>
-    <div class="head">
+
+<div class="container">
+  <div class="head">
     <header>
-        <div class="heading" ><img src="logo.png" alt="moviesflix" style="aspect-ratio: auto;"></div>
+        <div class="heading" ><img src="files/logo.png" alt="moviesflix" style="aspect-ratio: auto;"></div>
         <form>
-            <input type="search" id="search" value placeholder="Search here!">
-        </header>
-    </div>
-    <div class="dropdown">
+        <input type="search" id="search" value placeholder="Search here!">
+        </form>
+        <img src="files/slogo.png" alt="search" id="slogo">
+    </header>
+  </div>
+  <div id="bar">
     <button class="dbtn">🏠Home</button>
-    <!--
-    -->
-    <button class="dbtn" id='db1' onmouseover ="myFunction(1)" onmouseout = "myF(1)">🎬MOVIES</button>
-        <div class="drop1" id="dc1" onmouseover ="myFunction(1)" onmouseout = "myF(1)">
-            <a href="#">LATEST RELEASED</a>
+    <button class="dbtn" onmouseover ="myF1(1)" onmouseout = "myF2(1)">🎬MOVIES</button>
+        <div class="dropc" id="dc1" onmouseover ="myF1(1)" onmouseout = "myF2(1)">
+            <a href="another/web.html">LATEST RELEASED</a>
             <a href="#">HOLLYWOOD MOVIES</a>
             <a href="#">ENGLISH MOVIES</a>
             <a href="#">ADULT MOVIES</a>
             <a href="#">DUAL AUDIO</a>
             <a href="#">MULTI AUDIO</a>
         </div>
-        <!--
-        -->
-    <button class="dbtn" onmouseover ="myFunction(2)" onmouseout = "myF(2)">🔗GENRE</button>
-        <div class="drop1" id="dc2" onmouseover ="myFunction(2)" onmouseout = "myF(2)">
+    <button class="dbtn" onmouseover ="myF1(2)" onmouseout = "myF2(2)">🔗GENRE</button>
+        <div class="dropc" id="dc2" onmouseover ="myF1(2)" onmouseout = "myF2(2)">
             <a href="#">ACTION</a>
             <a href="#">ADVENTURE</a>
             <a href="#">ANIMATED</a>
@@ -74,10 +37,9 @@
             <a href="#">MYSTERY</a>
             <a href="#">SCI-FI</a>
             <a href="#">ROMANCE</a>
-        </div><!--
-        -->
-    <button class="dbtn" onmouseover ="myFunction(3)" onmouseout = "myF(3)">📅YEAR</button>
-        <div class="drop1" id="dc3" onmouseover ="myFunction(3)" onmouseout = "myF(3)">
+        </div>
+    <button class="dbtn" onmouseover ="myF1(3)" onmouseout = "myF2(3)">📅YEAR</button>
+        <div class="dropc" id="dc3" onmouseover ="myFunction(3)" onmouseout = "myF(3)">
             <a href="#">2021 MOVIES</a>
             <a href="#">2020 MOVIES</a>
             <a href="#">2019</a>
@@ -88,18 +50,15 @@
             <a href="#">2014</a>
             <a href="#">2013</a>
             <a href="#">2012</a>
-        </div><!--
-        -->
-    <button class="dbtn" onmouseover ="myFunction(4)" onmouseout = "myF(4)">☠️QUALITY</button>
-        <div class="drop1" id="dc4" onmouseover ="myFunction(4)" onmouseout = "myF(4)">
+        </div>
+    <button class="dbtn" onmouseover ="myF1(4)" onmouseout = "myF2(4)">☠️QUALITY</button>
+        <div class="dropc" id="dc4" onmouseover ="myFunction(4)" onmouseout = "myF(4)">
             <a href="#">480P MOVIES</a>
             <a href="#">720P MOVIES</a>
             <a href="#">1080P MOVIES</a>
         </div>
-        <!--
-    -->
-    <button class="dbtn" onmouseover ="myFunction(5)" onmouseout = "myF(5)">📺TV SHOWS</button>
-        <div class="drop1" id="dc5" onmouseover ="myFunction(5)" onmouseout = "myF(5)">
+    <button class="dbtn" onmouseover ="myF1(5)" onmouseout = "myF2(5)">📺TV SHOWS</button>
+        <div class="dropc" id="dc5" onmouseover ="myF1(5)" onmouseout = "myF2(5)">
             <a href="#">ACTION SERIES</a>
             <a href="#">ADVENTURE SERIES</a>
             <a href="#">COMEDY SERIES</a>
@@ -111,57 +70,24 @@
             <a href="#">SCI-FI SERIES</a>
             <a href="#">THRILLER SERIES</a>
         </div>
-        <!--
-    -->
-    <button class="dbtn" onmouseover ="myFunction(6)" onmouseout = "myF(6)">🌐WEB SERIES</button>
-    <div class="drop1" id="dc6" onmouseover ="myFunction(6)" onmouseout = "myF(6)">
+    <button class="dbtn" onmouseover ="myF1(6)" onmouseout = "myF2(6)">🌐WEB SERIES</button>
+    <div class="dropc" id="dc6" onmouseover ="myF1(6)" onmouseout = "myF2(6)">
         <a href="#">HINDI DUBBED</a>
         <a href="#">ENGLISH</a>
         <a href="#">NETFLIX</a>
         <a href="#">AMAZON PRIME VIDEO</a>
     </div>
-</div>
-<div class="btn_div">
-<button type="button" value="1" class="btn" id="id1">Telegram Group</button>
-<button type="button" value="2" class="btn">Telegram Channel</button>
-<button type="button" value="3" class="btn">Bollywood Site</button>
-<button type="button" value="4" class="btn">Bollywood</button>
-<button type="button" value="5" class="btn">Dual Audio</button>
-<button type="button" value="6" class="btn">480p Movies</button>
-<button type="button" value="7" class="btn">720p Movies</button>
-<button type="button" value="8" class="btn">Netflix</button>
-<button type="button" value="9" class="btn">Web Series</button>
-<button type="button" value="10" class="btn">Hindi Series</button>
-<button type="button" value="11" class="btn">18+ Movies</button>
-</div>
-<div class="green"><p class="text1"><b>We have Changed our Official Domain name to Movies.cc Save our new official domain.</b></p></div>
-<div class="movies">
-<div class="movie-card" id="l">
-    <div class="movie-img-div"><img id="movie-img" src="punisher.png" alt="img"></div>
-    <div><a id="movies-name" href="#">Download Marvel The Punisher (Season 1 – 2) {English With Subtitles} 720p HEVC WeB-HD [230MB]]</a></div>
-</div>
-<div class="movie-card" id="m">
-    <div class="movie-img-div"><img id="movie-img" src="legion.png" alt="img"></div>
-    <div><a id="movies-name" href="#">Download Marvel Legion (Season 1 – 3) Complete {English With Subtitles} 720p WeB-HD [320MB]</a></div>
-</div>
-<div class="movie-card" id="m">
-    <div class="movie-img-div"><img id="movie-img" src="assembled.png" alt="img"></div>
-    <div><a id="movies-name" href="#">Download Marvel Studios: Assembled (Season 1) [S01E01 Added] {English With Subtitles} WeB-HD 720p [450MB]</a></div>
-</div>
-<div class="movie-card" id="m">
-    <div class="movie-img-div"><img id="movie-img" src="fin.png" alt="img"></div>
-    <div><a id="movies-name" href="#">Download Phineas and Ferb Mission Marvel (2013) Dual Audio (Hindi-English) 480p [130MB] || 720p [390MB]</a></div>
-</div>
-<div class="movie-card" id="r">
-    <div class="movie-img-div"><img id="movie-img" src="legends.png" alt="img"></div>
-    <div><a id="movies-name" href="#">Download Marvel Studios: Legends (Season 1) [S01E06 Added] {English With Subtitles} WeB-HD 720p [60MB]</a></div>
-</div>
+  </div>
+  <div id="sidebar">rSide</div>
+  <div id="button">button</div>
+  <div id="green">green</div>
+  <div id="content1">Content1</div>
+  <div id="content2">Content2</div>
+  <div id="content3">Content3</div>
+  <div id="nxt"><p>nxt</p></div>
+  <div id="lside"> lside</div>
+  <footer>Footer</footer>
+  <script src="JavaScript/javascript.js"></script>
 </div>
 
-<footer>
-    <p id="f">TheMoviesFlix.com |Moviesflix | Movies flix | moviesflix-300mb Movies, 480p Movies </p><p>Copyright © 2021.</p>
-</footer>
-<script src="java.js">
-</script>
-</body>
 </html>

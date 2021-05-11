@@ -1,0 +1,209 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+    background-color: #f0ede9;
+  }
+  
+  .container {
+    display: grid;
+    height: 3000px;
+    grid-template-columns: 0.05fr 1fr 1fr 1fr 0.05fr;
+    grid-template-rows: 0.1fr 0.07fr 0.2fr 0.2fr 1.5fr 1.2fr 0.1fr 0.1fr;
+    grid-template-areas:
+      "nav nav nav nav nav"
+      "bar bar bar bar bar"
+      "sidebar button button button lside"
+      "sidebar green green green lside"
+      "sidebar content1 content2 content3  lside"
+      "sidebar content1 content2 content3 lside"
+      "sidebar nxt nxt nxt lside"
+      "sidebar footer footer footer lside"; 
+    grid-gap: 0.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
+  }
+  #nxt {
+    background: #325f55;
+    grid-area: nxt;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  #green {
+    background: #64ffda;
+    grid-area: green;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  #button {
+    background: #007e60;
+    grid-area: button;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  #lside {
+    background: #a7ffeb;
+    grid-area: lside;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  .head {
+    background: #ffffff;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    width: 5fr;
+    position: -webkit-sticky;
+    position: relative;
+    top: 0;
+    padding: 8px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 0px;
+  }
+  
+  main {
+    background: #84ffff;
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  #sidebar {
+    background: #18ffff;
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  #content1 {
+    background: #6fffd2;
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  #content2 {
+    background: #64ffda;
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  #content3 {
+    background: #73ffba;
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  footer {
+    background: #1de9b6;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  a {
+    text-align: center;
+    display: block;
+    font-family: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+      grid-template-areas:
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+    }
+  }
+  input[type=search]{
+    background-color: rgb(233, 233, 233);
+    border-color: rgb(233, 233, 233);
+    box-sizing: border-box;
+    padding: 20px 10px;
+    width: 500px;
+    height: 30px;
+    border-style: hidden;
+    color: #640e0e00;
+    position: absolute;
+    top: 25px;
+    right: 70px;
+}
+.heading{
+    position: absolute;
+    float: left;
+    width: 20%;
+    background-color: rgb(255, 255, 255);
+    top: 20px;
+}
+#slogo{
+    height: 40px;
+    position: relative;
+    left: 500px;
+    top: 5px;
+    cursor: pointer;
+}
+#bar {
+    background: #555;
+    grid-area: bar;
+    border-radius: var(--main-radius);
+    padding-top: 0px;
+    margin-bottom: 6px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 0%;
+  }
+.dbtn {
+    position: relative;
+    background-color: #555;
+    color: white;
+    border-collapse: collapse;
+    padding: 15px 38px;
+    font-size: 16px;
+    border: 1px solid #666;
+    cursor: pointer;
+}
+.dropc {
+    font-size: 14px;
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#dc1{
+margin-left: 151px; 
+}
+#dc2{
+    margin-left: 314px; 
+}
+#dc3{
+    margin-left: 470px; 
+}
+#dc4{
+    margin-left: 612px; 
+}
+#dc5{
+    margin-left: 780px; 
+}
+#dc6{
+    margin-left: 965px; 
+}
