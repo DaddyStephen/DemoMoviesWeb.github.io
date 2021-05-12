@@ -99,17 +99,17 @@
     margin: 1rem;
   }
   input[type=search]{
+    color: black;
     background-color: rgb(233, 233, 233);
-    border-color: rgb(233, 233, 233);
+    border: none;
     box-sizing: border-box;
     padding: 20px 10px;
     width: 500px;
     height: 30px;
     border-style: hidden;
-    color: #640e0e00;
     position: absolute;
     top: 25px;
-    right: 70px;
+    right: 300px;
 }
 .heading{
     position: absolute;
@@ -117,6 +117,7 @@
     width: 20%;
     background-color: rgb(255, 255, 255);
     top: 20px;
+    color: black;
 }
 #logo{
   width: 150px;
@@ -125,7 +126,7 @@
 #slogo{
     height: 40px;
     position: relative;
-    left: 500px;
+    left: 300px;
     top: 5px;
     cursor: pointer;
 }
