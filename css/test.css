@@ -23,8 +23,6 @@
       "sidebar nxt nxt nxt nxt nxt lside"
       "sidebar footer footer footer footer footer lside"; 
     grid-gap: 0.2rem;
-    font-weight: 800;
-    text-transform: uppercase;
     font-size: 12px;
     color: #004d40;
     text-align: center;
@@ -100,7 +98,6 @@
     display: block;
     font-family: inherit;
     text-decoration: none;
-    font-weight: bold;
     margin: 1rem;
   }
   input[type=search]{
@@ -156,6 +153,7 @@
 }
 .dropc {
     font-size: 14px;
+    padding: 5px;
     display: none;
     position: absolute;
     background-color: #555;
@@ -164,8 +162,14 @@
     z-index: 1;
 }
 .dropc a{
+  text-decoration: none;
+  text-align: left  ;
+  padding: 8px;
   width: 200px;
   color: white;
+}
+.dropc a:hover{
+  color: #999;
 }
 #dc1{
 margin-left: 151px; 
@@ -185,10 +189,9 @@ margin-left: 151px;
 #dc6{
     margin-left: 965px; 
 }
-.button{
-  padding: 20px;
-  margin-left: 100px;
-  background-color: #555;
+#button a{
+  text-decoration: none;
+  color: white;
 }
 .btn{
   margin-top: 10px;
@@ -199,6 +202,12 @@ margin-left: 151px;
   color: white;
   border: 1px solid black;
   background-color: #555;
+}
+.btn:hover{
+  transition: 0.2s;
+  padding: 10px 6px;
+  background-color: rgb(233, 233, 233);
+  color: black;
 }
 #text1{
   padding: 1px 10pxs;
@@ -364,7 +373,7 @@ margin-left: 151px;
 }
 #movies-name{
   background-color:white;
-  font-size: 16 px;
+  font-size: 18 px;
   line-height: 1.4;
   font-family: 'Alef';
   font-weight: 700;
