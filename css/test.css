@@ -351,6 +351,24 @@ margin-left: 151px;
   ;
   margin-bottom: 50px;
 }
+#c41{
+  grid-area: c41;
+}
+#c42{
+  grid-area: c42;
+}
+#c43{
+  grid-area: c43;
+}
+#c44{
+  grid-area: c44;
+}
+#c45{
+  grid-area: c45;
+}
+#c46{
+  grid-area: c46;
+}
 #content5 {
   background-color: #f0ede9;
   grid-area: content5;
@@ -369,6 +387,24 @@ margin-left: 151px;
   "c56"
   ;
   margin-bottom: 50px;
+}
+#c51{
+  grid-area: c51;
+}
+#c52{
+  grid-area: c52;
+}
+#c53{
+  grid-area: c53;
+}
+#c54{
+  grid-area: c54;
+}
+#c55{
+  grid-area: c55;
+}
+#c56{
+  grid-area: c56;
 }
 #movie-img{
   width: 200px;
@@ -420,30 +456,55 @@ footer {
   #bar {
     display: none;
   }
-  #search{
-    display: none;
+  input[type=search]{
+    left: 200px;
+    width: 180px;
   }
   #slogo{
-    display: none;
+    left: 117px;
+  }
+  .head{
+    height: 75px;
   }
   .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.07fr 0.07fr 0.05fr  1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.07fr 0.07fr 0.05fr  1.5fr 1.5fr 1.5fr  0.5fr 0.5fr;
     grid-template-areas:
-    "nav"
-    "bar"
-    "button"
-    "green"
-    "content1"
-    "content2"
-    "content3"
-    "content4"
-    "content5"
-    "nxt"
-    "footer"; 
+    "nav nav"
+    "bar bar"
+    "button button"
+    "green green"
+    "content1 content2"
+    "content3 content4"
+    "content5 content5"
+    "nxt nxt"
+    "footer footer"; 
   }
-  #content1, #content2, #content3, #content4, #content5{
-    margin-left: 203px;
-    margin-right: 203px;
+  #content1, #content2, #content3, #content4{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #content5{
+    position: relative;
+    left: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr;
+    grid-template-areas: 
+    "c51 c52"
+    "c53 c54"
+    "c55 c56"
+    ;
+  }
+  #c51, #c53, #c55{
+    position: relative;
+    left: 0px;
+    margin-left: 40px;
+    margin-right: 50px;
+  }
+  #c52, #c54, #c56{
+    position: relative;
+    margin-left: 40px;
+    margin-right: 50px;
   }
 }
