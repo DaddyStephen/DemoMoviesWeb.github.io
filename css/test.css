@@ -111,6 +111,9 @@
     top: 25px;
     right: 300px;
 }
+  input:focus{
+    border-color: white;
+  }
 .heading{
     position: absolute;
     float: left;
@@ -120,6 +123,7 @@
     color: black;
 }
 #logo{
+  position: relative;
   width: 150px;
   height: 50px;
 }
@@ -229,7 +233,7 @@ margin-left: 151px;
   "c15"
   "c16"
   ;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 .card{
   background-color: white;
@@ -270,7 +274,7 @@ margin-left: 151px;
   "c25"
   "c26"
   ;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 #c21{
   grid-area: c21;
@@ -308,7 +312,7 @@ margin-left: 151px;
   "c35"
   "c36"
   ;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 #c31{
   grid-area: c31;
@@ -345,7 +349,7 @@ margin-left: 151px;
   "c45"
   "c46"
   ;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 #content5 {
   background-color: #f0ede9;
@@ -364,7 +368,7 @@ margin-left: 151px;
   "c55"
   "c56"
   ;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 #movie-img{
   width: 200px;
@@ -413,9 +417,18 @@ footer {
 
 
 @media only screen and (max-width: 700px) {
+  #bar {
+    display: none;
+  }
+  #search{
+    display: none;
+  }
+  #slogo{
+    display: none;
+  }
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.07fr 0.07fr 0.05fr 1.5fr 1.2fr 0.1fr 0.1fr;
+    grid-template-rows: 0.5fr 0.07fr 0.07fr 0.05fr  1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 0.5fr 0.5fr;
     grid-template-areas:
     "nav"
     "bar"
@@ -424,10 +437,13 @@ footer {
     "content1"
     "content2"
     "content3"
+    "content4"
+    "content5"
     "nxt"
     "footer"; 
   }
-  #bar {
-    display: none;
+  #content1, #content2, #content3, #content4, #content5{
+    margin-left: 203px;
+    margin-right: 203px;
   }
 }
