@@ -123,6 +123,10 @@
     background-color: rgb(255, 255, 255);
     top: 20px;
 }
+#logo{
+  width: 150px;
+  height: 50px;
+}
 #slogo{
     height: 40px;
     position: relative;
