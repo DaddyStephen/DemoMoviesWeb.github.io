@@ -216,8 +216,8 @@ margin-left: 151px;
   grid-area: content1;
   border-radius: var(--main-radius);
   padding-top: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   grid-template-areas:
@@ -257,8 +257,8 @@ margin-left: 151px;
   grid-area: content2;
   border-radius: var(--main-radius);
   padding-top: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   grid-template-areas:
@@ -295,8 +295,8 @@ margin-left: 151px;
   grid-area: content3;
   border-radius: var(--main-radius);
   padding-top: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   grid-template-areas:
@@ -332,8 +332,8 @@ margin-left: 151px;
   grid-area: content4;
   border-radius: var(--main-radius);
   padding-top: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   grid-template-areas:
@@ -351,8 +351,8 @@ margin-left: 151px;
   grid-area: content5;
   border-radius: var(--main-radius);
   padding-top: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   grid-template-areas:
