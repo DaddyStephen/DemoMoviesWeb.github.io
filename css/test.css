@@ -50,7 +50,6 @@
     padding-top: var(--main-padding);
   }
   #lside {
-    background: #a7ffeb;
     grid-area: lside;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -78,7 +77,6 @@
   }
   
   #sidebar {
-    background: #18ffff;
     grid-area: sidebar;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -217,7 +215,7 @@ margin-left: 151px;
   background-color: #f0ede9;
   grid-area: content1;
   border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+  padding-top: 50px;
   margin-left: 20px;
   margin-right: 20px;
   display: grid;
@@ -258,7 +256,7 @@ margin-left: 151px;
   background-color: #f0ede9;
   grid-area: content2;
   border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+  padding-top: 50px;
   margin-left: 20px;
   margin-right: 20px;
   display: grid;
@@ -296,7 +294,7 @@ margin-left: 151px;
   background-color: #f0ede9;
   grid-area: content3;
   border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+  padding-top: 50px;
   margin-left: 20px;
   margin-right: 20px;
   display: grid;
@@ -333,7 +331,7 @@ margin-left: 151px;
   background-color: #f0ede9;
   grid-area: content4;
   border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+  padding-top: 50px;
   margin-left: 20px;
   margin-right: 20px;
   display: grid;
@@ -352,7 +350,7 @@ margin-left: 151px;
   background-color: #f0ede9;
   grid-area: content5;
   border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+  padding-top: 50px;
   margin-left: 20px;
   margin-right: 20px;
   display: grid;
@@ -373,7 +371,7 @@ margin-left: 151px;
 }
 #movies-name{
   background-color:white;
-  font-size: 18 px;
+  font-size: 30 px;
   line-height: 1.4;
   font-family: 'Alef';
   font-weight: 700;
@@ -387,7 +385,17 @@ margin-left: 151px;
   margin-left: 5px;
   margin-right: 5px;
 }
-
+footer {
+  font-size: 15px;
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  color: gray;
+}
+#f:hover{
+  transition: 0.5s;
+  color: green;
+}
 
 
 
